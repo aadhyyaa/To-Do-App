@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        Docker_image = 'ToDo-App:latest'
+        Docker_image = 'To-Do-App:latest'
     }
     stages{
         stage('Checkout'){
@@ -22,7 +22,7 @@ pipeline{
         stage('Test'){
             steps{
                 script{
-                    docker.image('ToDo-App:latest').inside{
+                    docker.image('To-Do-App:latest').inside{
                         sh 'pytest'
                     }
                 }
