@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        Docker_image = 'To-Do-App:latest'
+        Docker_image = 'to-do-app:latest'
     }
     stages {
         stage('Checkout') {
