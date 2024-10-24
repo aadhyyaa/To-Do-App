@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                branch:'main', url:'https://github.com/aadhyyaa/To-Do-App.git'
+                git branch:'main', url:'https://github.com/aadhyyaa/To-Do-App.git'
             }
             
         }
